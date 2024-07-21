@@ -15,7 +15,7 @@ stages {
 }
 stage("git checkout"){
     steps {
-     git branch: 'main' , CredentialsId: 'github' , url: '
+     git branch: 'main' , CredentialsId: 'github' , url: 'https://github.com/himani0323/register-app.git'
 }
 }
  stage("build application"){
