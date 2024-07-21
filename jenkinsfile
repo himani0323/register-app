@@ -26,3 +26,7 @@ stage("git checkout"){
 stage("test"){
     steps {
       sh "mvn test"
+}
+}
+}
+}
