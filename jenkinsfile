@@ -1,8 +1,8 @@
-pipeline{
-  agent {
+pipeline {
+    agent {
     label 'jenkins-agent'
 }
-tools{
+tools {
   jdk 'java11'
   maven 'maven3'
 }
@@ -15,7 +15,7 @@ stages {
 }
 stage("git checkout"){
     steps {
-     git branch: 'main' , CredentialsId: 'github' , url: 'https://github.com/himani0323/register-app.git'
+     git branch: 'main' , credentialsId: 'github' , url: 'https://github.com/himani0323/register-app.git'
 }
 }
  stage("build application"){
